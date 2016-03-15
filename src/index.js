@@ -7,8 +7,8 @@ class LifecycleComponent extends React.Component {
     this::this.props.handleComponentDidMount();
   }
 
-  componentWillReceiveProps() {
-    this::this.props.handleComponentWillReceiveProps();
+  componentWillReceiveProps(nextProps) {
+    this::this.props.handleComponentWillReceiveProps(nextProps);
   }
 
   render() {
