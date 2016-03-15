@@ -13,7 +13,7 @@ Add component did mount and component will receive props to stateless component.
 import addLifecycle from 'react-stateless-lifecycle';
 
 const wrapLifecycle = addLifecycle({
-  handleComponentDidMount: triggerRequestFetch,
+  handleComponentDidMount: Function,
   handleComponentWillReceiveProps: Function,
 });
 
